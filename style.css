@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fe9801;
+  color: black;
+  text-align: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  color: black;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.timer,
+.errors,
+.accuaracy,
+.charTyped {
+  background-color: #ccda46;
+  height: 90px;
+  width: 110px;
+  margin: 8px;
+  padding: 12px;
+  border-radius: 20%;
+  -webkit-box-shadow: black 5px 8px 5px;
+          box-shadow: black 5px 8px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.charTyped {
+  display: none;
+}
+
+.curr_Timer,
+.curr_Errors,
+.curr_Accuaracy,
+.curr_Char_Typed {
+  font-size: 2.75rem;
+}
+
+.text {
+  background-color: #ccda46;
+  font-size: 1.5rem;
+  margin: 10px;
+  padding: 25px;
+  -webkit-box-shadow: black 5px 8px 5px;
+          box-shadow: black 5px 8px 5px;
+}
+
+textarea {
+  background-color: #f5f5c6;
+  height: 130px;
+  width: 95%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 15px;
+  padding: 20px;
+  border: 0px;
+  -webkit-box-shadow: black 5px 8px 5px;
+          box-shadow: black 5px 8px 5px;
+}
+
+.btn {
+  display: none;
+  background-color: #326765;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 0px;
+  -webkit-box-shadow: black 5px 8px 5px;
+          box-shadow: black 5px 8px 5px;
+  cursor: pointer;
+}
+
+.incorrect_char {
+  color: red;
+  text-decoration: underline;
+}
+
+.correct_char {
+  color: darkgreen;
+}
+
+@media only screen and (max-width: 600px) {
+  .info {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}

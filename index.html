@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Speed Typing</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="header">
+        <h1>Speed Typing Test</h1>
+      </section>
+
+      <section class="info">
+        <div class="errors">
+          <span>ERRORS</span>
+          <span class="curr_Errors">0</span>
+        </div>
+        <div class="timer">
+          <span>TIME</span>
+          <span class="curr_Timer">60s</span>
+        </div>
+        <div class="accuaracy">
+          <span>ACCUARACY</span>
+          <span class="curr_Accuaracy">100%</span>
+        </div>
+        <div class="charTyped">
+          <span>Char Typed</span>
+          <span class="curr_Char_Typed"></span>
+        </div>
+      </section>
+
+      <section class="test">
+        <div class="text">Click on the area below to start the game</div>
+        <textarea
+          name=""
+          id=""
+          placeholder="start typing here..."
+          oninput="proccesCurrText()"
+          onfocus="startGame()"
+        ></textarea>
+        <button class="btn" type="reset" onclick="resetValue()">Restart</button>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
